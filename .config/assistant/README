@@ -1,0 +1,30 @@
+# Assistant CLI for project management
+
+## Features:
+
+- creating project
+  - It'll create a dir with a specific pattern in home dir
+  - Save the info in database for future management in (neo tech)
+  - Creating a project in trello (for now)
+
+- freezing a project (updating status)
+- task
+
+## Demo
+
+- `assistant project create` (to create project)
+- `assistant project list` (show all, CLT, OSS, EXP projects)
+- `assistant project update` (status update)
+
+Details:
+
+to create:
+
+- project name
+- type
+- client name (if CLT type)
+- priority (normal by default)
+- status (active by default)
+
+it will create a dir and a set of data in postgresql.
+

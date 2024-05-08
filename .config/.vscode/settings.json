@@ -1,0 +1,80 @@
+{
+  "scm.diffDecorations": "none",
+  "explorer.decorations.colors": false,
+  "explorer.decorations.badges": false,
+  "editor.lineNumbers": "off",
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Moonlight Italic",
+  "editor.renderWhitespace": "trailing",
+  "editor.cursorStyle": "block",
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.compactFolders": false,
+  "vim.foldfix": true,
+  "editor.roundedSelection": false,
+  "editor.suggest.shareSuggestSelections": true,
+  "git.decorations.enabled": false,
+  "editor.lineHeight": 1.6,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.guides.indentation": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 12,
+  "gitlens.blame.highlight.enabled": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "github.copilot.chat.welcomeMessage": "never",
+  "github.copilot.chat.localeOverride": "en",
+  "workbench.startupEditor": "none",
+  "editor.wordWrap": "on",
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "gitlens.rebase",
+    "*.svg": "default"
+  },
+  "gitlens.graph.minimap.additionalTypes": [
+    "localBranches",
+    "stashes",
+    "remoteBranches",
+    "tags"
+  ],
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
+  "terminal.integrated.fontSize": 12,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.statusBar.visible": false,
+  "editor.rulers": [80],
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#2e2e44"
+  },
+  "remote.SSH.remotePlatform": {
+    "sandbox.myqq6z.csb": "linux"
+  },
+  "dineug.erd-editor.theme.appearance": "dark",
+  "dineug.erd-editor.theme.grayColor": "sand",
+  "dineug.erd-editor.theme.accentColor": "indigo",
+  "editor.tabSize": 2,
+  "svelte.enable-ts-plugin": true,
+  "gitlens.mode.active": "zen",
+  "editor.stickyScroll.enabled": false,
+  "breadcrumbs.enabled": false,
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.title": "${activeEditorShort} ${dirty}",
+  "window.menuBarVisibility": "compact",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "debug.console.acceptSuggestionOnEnter": "on",
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "vim.ignorecase": false,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.activityBar.location": "hidden",
+  "git.autofetch": true
+}

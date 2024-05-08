@@ -1,0 +1,104 @@
+format = """
+$cmd_duration\
+$hostname\
+$localip\
+$shlvl\
+$shell\
+$env_var\
+$sudo\
+$singularity\
+$directory\
+$vcsh\
+$fossil_branch\
+$git_branch\
+$git_commit\
+$git_state\
+$git_metrics\
+$git_status\
+$hg_branch\
+$pijul_channel\
+$docker_context\
+$package\
+$custom\
+$jobs\
+$os\
+$container\
+"""
+
+# BREAKING CHANGE:
+# $character\ (order: was after $sudo\)
+
+add_newline = true
+
+[character]
+format = "$symbol "
+success_symbol = "[◉](bold bright-yellow)"
+error_symbol = "[⊘](purple)"
+
+[env_var.VIMSHELL] # vim subshell
+format = "[$env_value]($style) "
+style = 'green'
+
+[sudo]
+format = "[$symbol]($style) "
+style = "bright-purple"
+symbol = "◇┈"
+disabled = false
+
+[directory]
+#home_symbol = "⌂"
+truncation_length = 2
+truncation_symbol = "▦ "
+read_only = "■"
+style = "blue"
+format = ' [$path]($style)[$read_only]($read_only_style) '
+
+[cmd_duration]
+min_time = 500
+format = "[$duration ](bright-yellow) "
+
+[jobs]
+format = "[$symbol]($style) "
+style = "white"
+symbol = "[▶](blue)"
+
+[localip]
+ssh_only = true
+format = "◯[$localipv4](bold magenta) "
+disabled = false
+
+[time]
+disabled = false
+format = "[ $time]($style)"
+time_format = "%R"
+utc_time_offset = "local"
+style = "dimmed white"
+
+[git_branch]
+format = "[$symbol $branch(:$remote_branch)]($style) "
+symbol = "[◬](bold bright-blue)"
+style = "bold bright-blue"
+
+[git_status]
+style = "bright-blue"
+format = """([⎪$ahead_behind$staged$modified$untracked$renamed$deleted$conflicted$stashed⎥]($style)) """
+conflicted = "[◪◦](bright-magenta)"
+ahead = "[▲│[${count}](bold white)│](green)"
+behind = "[▽│[${count}](bold white)│](red)"
+diverged = "[◇ ▲┤[${ahead_count}](regular white)│▽┤[${behind_count}](regular white)│](bright-magenta)"
+untracked = "[◌◦](bright-yellow)"
+stashed = "[◦◫◦](white)"
+modified = "[●◦](yellow)"
+staged = "[■┤[$count](bold white)│](bright-cyan)"
+renamed = "[◎◦](bright-blue)"
+deleted = "[✕](red)"
+
+[package]
+format = "pkg [$symbol$version]($style) "
+version_format = "${major}.${minor}"
+symbol = "◫ "
+style = "bright-yellow italic"
+
+[docker_context]
+symbol = "◧ "
+format = "docker [$symbol$context]($style) "
