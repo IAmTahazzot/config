@@ -4,7 +4,6 @@
   "explorer.decorations.badges": false,
   "editor.lineNumbers": "off",
   "window.commandCenter": false,
-  "workbench.layoutControl.enabled": false,
   "editor.minimap.enabled": false,
   "workbench.colorTheme": "Moonlight Italic",
   "editor.renderWhitespace": "trailing",
@@ -53,7 +52,6 @@
   "dineug.erd-editor.theme.appearance": "dark",
   "dineug.erd-editor.theme.grayColor": "sand",
   "dineug.erd-editor.theme.accentColor": "indigo",
-  "editor.tabSize": 2,
   "svelte.enable-ts-plugin": true,
   "gitlens.mode.active": "zen",
   "editor.stickyScroll.enabled": false,
@@ -62,7 +60,7 @@
   "less.lint.unknownAtRules": "ignore",
   "css.lint.unknownAtRules": "ignore",
   "security.workspace.trust.untrustedFiles": "open",
-  "window.title": "${activeEditorShort} ${dirty}",
+  "window.title": "${activeFolderMedium}\\${activeEditorShort} ${dirty}",
   "window.menuBarVisibility": "compact",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[python]": {
@@ -75,6 +73,74 @@
   },
   "vim.ignorecase": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "git.autofetch": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "editor.tabSize": 2,
   "workbench.activityBar.location": "hidden",
-  "git.autofetch": true
+  "workbench.layoutControl.enabled": false,
+  "window.customTitleBarVisibility": "never",
+
+  // ----------------------------- EXTENSIONS -------------------------------
+  "todo-tree.general.tags": [
+    "TODO",
+
+    "FEATURE",
+    "FEAT",
+
+    "BUG",
+
+    "FIX",
+    "FIXME",
+    "FIXIT",
+    "ISSUE",
+  ],
+  "todo-tree.general.tagGroups": {
+    "FIX": ["FIXME", "FIXIT", "PROBLEM", "FIXTHIS", "ISSUE"],
+    "FEATURE": ["FEAT"],
+  },
+  "todo-tree.highlights.customHighlight": {
+    "FIX": {
+      "icon": "alert",
+      "type": "line",
+      "foreground": "#ec4646",
+      "background": "#f1505010",
+      "iconColour": "#f54539",
+      "rulerColour": "#f37a7a",
+      "rulerLane": "right"
+    },
+    "TODO": {
+      "icon": "check",
+      "type": "tag",
+      "iconColour": "#fff",
+      "foreground": "#000000",
+      "background": "#ffffff",
+      "rulerLane": "right",
+      "rulerColour": "#fff"
+    },
+    "FEATURE": {
+      "icon": "flame",
+      "type": "tag",
+      "iconColour": "#3bda77",
+      "foreground": "#3bda77",
+      "background": "#3cfa3c1f",
+      "rulerLane": "right",
+      "rulerColour": "#3bda77"
+    },
+    "BUG": {
+      "icon": "bug",
+      "type": "tag",
+      "foreground": "#ec7b46",
+      "background": "#e9704c10",
+      "iconColour": "#e6743f",
+      "rulerColour": "#fdd5a7",
+      "rulerLane": "right"
+    }
+  }
 }
+
