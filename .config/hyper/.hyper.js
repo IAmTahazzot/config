@@ -21,7 +21,7 @@ module.exports = {
     padding: "10px 14px 5px",
     borderColor: "#333",
 
-    backgroundColor: "#242431",
+    backgroundColor: "#222436",
     foregroundColor: "#cdd6f4",
     selectionColor: "#585b70",
     cursorColor: "#f5e0dc",
@@ -67,3 +67,4 @@ module.exports = {
     "window:toggleFullScreen": "alt+enter",
   },
 };
+
