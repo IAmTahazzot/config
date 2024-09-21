@@ -1,108 +1,106 @@
 {
-  "scm.diffDecorations": "none",
-  "explorer.decorations.colors": false,
-  "explorer.decorations.badges": false,
+  // General Editor Settings
+  "editor.tabSize": 2,
+  "editor.rulers": [80],
   "editor.lineNumbers": "off",
-  "window.commandCenter": false,
-  "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Moonlight Italic",
+  "editor.wordWrap": "on",
   "editor.renderWhitespace": "trailing",
   "editor.cursorStyle": "block",
-  "workbench.iconTheme": "material-icon-theme",
-  "explorer.compactFolders": false,
-  "vim.foldfix": true,
   "editor.roundedSelection": false,
   "editor.suggest.shareSuggestSelections": true,
-  "git.decorations.enabled": false,
   "editor.lineHeight": 1.6,
   "editor.guides.highlightActiveIndentation": false,
   "editor.guides.indentation": false,
-  "workbench.tree.renderIndentGuides": "none",
-  "workbench.tree.indent": 12,
-  "gitlens.blame.highlight.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.stickyScroll.enabled": false,
+  "editor.detectIndentation": false,
+  "editor.lightbulb.enabled": "off",
+
+  // Explorer Settings
+  "explorer.decorations.colors": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "github.copilot.chat.welcomeMessage": "never",
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": false,
+
+  // Git Settings
+  "git.autofetch": true,
   "github.copilot.chat.localeOverride": "en",
+  "github.copilot.chat.welcomeMessage": "never",
+  "git.decorations.enabled": false,
+  "gitlens.blame.highlight.enabled": false,
+  "scm.diffDecorations": "none",
+
+  // Workbench Settings
   "workbench.startupEditor": "none",
-  "editor.wordWrap": "on",
-  "gitlens.ai.experimental.provider": "openai",
-  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 12,
+  "workbench.editor.empty.hint": "hidden",
   "workbench.editorAssociations": {
     "git-rebase-todo": "gitlens.rebase",
     "*.svg": "default"
   },
+  "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#2e2e44"
+  },
+
+  // Window Settings
+  "window.title": "${activeEditorShort}",
+  "window.commandCenter": false,
+
+  // Terminal Settings
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
+  "terminal.integrated.fontSize": 12,
+
+  // Language Specific Settings
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 4
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  "css.lint.unknownAtRules": "ignore",
+
+  // Extension Specific Settings
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "vim.foldfix": true,
+  "vim.ignorecase": false,
+  "gitlens.mode.active": "zen",
   "gitlens.graph.minimap.additionalTypes": [
     "localBranches",
     "stashes",
     "remoteBranches",
     "tags"
   ],
-  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
-  "terminal.integrated.fontSize": 12,
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.statusBar.visible": false,
-  "editor.rulers": [80],
-  "workbench.colorCustomizations": {
-    "editorRuler.foreground": "#2e2e44"
-  },
-  "remote.SSH.remotePlatform": {
-    "sandbox.myqq6z.csb": "linux"
-  },
-  "dineug.erd-editor.theme.appearance": "dark",
-  "dineug.erd-editor.theme.grayColor": "sand",
-  "dineug.erd-editor.theme.accentColor": "indigo",
-  "svelte.enable-ts-plugin": true,
-  "gitlens.mode.active": "zen",
-  "editor.stickyScroll.enabled": false,
-  "breadcrumbs.enabled": false,
-  "scss.lint.unknownAtRules": "ignore",
-  "less.lint.unknownAtRules": "ignore",
-  "css.lint.unknownAtRules": "ignore",
-  "security.workspace.trust.untrustedFiles": "open",
-  "window.title": "${activeFolderMedium}\\${activeEditorShort} ${dirty}",
-  "window.menuBarVisibility": "compact",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "debug.console.acceptSuggestionOnEnter": "on",
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "vim.ignorecase": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "git.autofetch": true,
-  "prisma.showPrismaDataPlatformNotification": false,
-  "[c]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
-  "editor.tabSize": 2,
-  "workbench.activityBar.location": "hidden",
-  "workbench.layoutControl.enabled": false,
-  "window.customTitleBarVisibility": "never",
-
-  // ----------------------------- EXTENSIONS -------------------------------
   "todo-tree.general.tags": [
     "TODO",
-
     "FEATURE",
     "FEAT",
-
     "BUG",
-
     "FIX",
     "FIXME",
     "FIXIT",
     "ISSUE",
+    "WARNING"
   ],
   "todo-tree.general.tagGroups": {
-    "FIX": ["FIXME", "FIXIT", "PROBLEM", "FIXTHIS", "ISSUE"],
-    "FEATURE": ["FEAT"],
+    "FIX": ["FIXME", "FIXIT", "PROBLEM", "FIXTHIS", "ISSUE", "WARNING"],
+    "FEATURE": ["FEAT"]
   },
   "todo-tree.highlights.customHighlight": {
     "FIX": {
@@ -141,6 +139,45 @@
       "rulerColour": "#fdd5a7",
       "rulerLane": "right"
     }
-  }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "debug.console.acceptSuggestionOnEnter": "on",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "files.exclude": {
+    "**/.vscode": true
+  },
+  "extensions.ignoreRecommendations": true,
+  "workbench.statusBar.visible": false,
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.tabSize": 4
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.layoutControl.enabled": false,
+  "breadcrumbs.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "gitlens.advanced.fileHistoryShowAllBranches": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "workbench.activityBar.location": "hidden",
+  "material-icon-theme.folders.theme": "specific",
+  "diffEditor.codeLens": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Moonlight II Italic"
 }
-
