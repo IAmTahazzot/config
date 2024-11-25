@@ -15,22 +15,22 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.stickyScroll.enabled": false,
   "editor.detectIndentation": false,
-  "editor.lightbulb.enabled": "off",
+  // "editor.lightbulb.enabled": "off",
 
   // Explorer Settings
-  "explorer.decorations.colors": false,
+  // "explorer.decorations.colors": false,
+  // "explorer.decorations.badges": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.compactFolders": false,
-  "explorer.decorations.badges": false,
 
   // Git Settings
-  "git.autofetch": true,
-  "github.copilot.chat.localeOverride": "en",
-  "github.copilot.chat.welcomeMessage": "never",
-  "git.decorations.enabled": false,
-  "gitlens.blame.highlight.enabled": false,
-  "scm.diffDecorations": "none",
+  // "git.autofetch": true,
+  // "github.copilot.chat.localeOverride": "en",
+  // "github.copilot.chat.welcomeMessage": "never",
+  // "git.decorations.enabled": false,
+  // "gitlens.blame.highlight.enabled": false,
+  // "scm.diffDecorations": "none",
 
   // Workbench Settings
   "workbench.startupEditor": "none",
@@ -46,8 +46,7 @@
   },
 
   // Window Settings
-  "window.title": "${activeEditorShort}",
-  "window.commandCenter": false,
+  "window.title": "${activeEditorMedium}",
 
   // Terminal Settings
   "terminal.integrated.defaultProfile.windows": "Git Bash",
@@ -60,14 +59,15 @@
     "editor.tabSize": 4
   },
   "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.tabSize": 4
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.tabSize": 4
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
 
   "scss.lint.unknownAtRules": "ignore",
@@ -161,12 +161,9 @@
     "editor.tabSize": 4
   },
   "[sql]": {
-    "editor.defaultFormatter": "mtxr.sqltools"
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode"
   },
-  "workbench.editor.enablePreview": false,
-  "workbench.layoutControl.enabled": false,
   "breadcrumbs.enabled": false,
-  "window.menuBarVisibility": "compact",
   "gitlens.advanced.fileHistoryShowAllBranches": true,
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
@@ -175,9 +172,15 @@
     "editor.defaultFormatter": "astro-build.astro-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "workbench.activityBar.location": "hidden",
   "material-icon-theme.folders.theme": "specific",
   "diffEditor.codeLens": true,
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Moonlight II Italic"
+  "workbench.colorTheme": "Moonlight II Italic",
+  "workbench.activityBar.location": "hidden",
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "workbench.layoutControl.enabled": false,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false
 }
